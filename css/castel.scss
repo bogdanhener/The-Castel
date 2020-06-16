@@ -1,0 +1,916 @@
+
+@import url(./fonts.css);
+
+// colors for . change-color
+$bg-main: #8377D1;
+$bg-second: #473144;
+$text-color: #F2F3AE;
+$footer: #A9B4C2;
+$lifestyle: #AF1B3F; 
+$bg-all: rgba(2, 1, 34, 0.7);
+ 
+
+
+
+// fonts
+$font-title: 'Philosopher';
+$font-text: 'Montserrat';
+
+
+
+// Mixins
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+};
+@mixin widthHeight {
+    width: 100%;
+    height: 100%;
+};
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+// End Mixins
+//=======================================================================================================
+// Homepage wrapper
+.homepage-wrapper{
+    height: 100vh;
+}
+//=======================================================================================================
+
+// Start Video Section
+.banner{
+    @include flexCenter();
+    position: absolute;
+    height: 113vh;
+    overflow: hidden;
+    video{
+        @include widthHeight();
+        position: fixed; // fixed with video on full bg
+         top: 0;
+         left: 0;
+         object-fit: cover;  
+         z-index: -1;
+    }
+    
+    #video-text{
+        position: absolute;
+        top: 3%;
+        left: 0;
+        @include widthHeight();
+        background: #ffffff;
+        font-size: 15vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        mix-blend-mode: screen;
+        font-family: 'Times-Roman', 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        z-index: -1;  
+        
+    }
+    
+};
+
+#container-bg-all{
+    background-color: rgba(255, 255, 255, 0.9);      //style for div that holds the bg with video on full
+    padding-bottom: 5px;
+};
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .banner{
+       top: 10%;
+       #video-text{
+           top: 0;
+       } 
+    }
+};
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .banner{
+        top: 10%;
+        #video-text{
+            top:0;
+        }
+    }
+};
+// End Video Section
+//=======================================================================================================
+
+// Start Navbar 
+.header_section{
+    position: absolute;
+    top: 0;
+    z-index: 999999;
+    #logo{
+        width: 9%;
+        position: absolute;
+        top: 10%;
+    }
+    .navbar-brand{
+        padding: 0 2rem 0 2rem;
+    }
+    .navbar{
+        padding: 1rem 6rem;
+    }
+    .nav-link{
+        font-family: '$font-title';
+        text-transform: uppercase;
+        padding: 0 1.3rem;
+        color: black;
+    }
+    #navigation{
+        height: 8%;
+        background-color: #ffffff;
+    }
+    
+};
+.weatherApp{
+    margin-left: 18%;
+    font-size: 15px;
+    font-family: '$font-title';
+    text-transform: uppercase;
+    span{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .header_section{
+        #navigation{
+            height: 10%;
+        }
+        #logo{
+            width: 25%;
+            position: absolute;
+            top: 10%;
+            left: 0;
+        }
+        .navbar-toggler{
+            position: absolute; 
+            right: 5%;
+        }
+        .navbar-nav{
+           background-color: rgba(0, 0, 0, 0.7);
+           @include flexCenter();
+           
+           .nav-link{
+            color: #ffffff;
+           }
+           
+        }
+        .weatherApp{
+            position: relative;
+            bottom: 15px;
+            font-size: 8px;
+            #img-weather{
+                width: 40px;
+            }
+        }
+        
+    }
+     
+};
+@media (orientation: landscape) and (max-width: 799px){
+    #navigation{
+        height: 15%;
+    }
+    #logo{
+        left: 3%;
+    }
+    .weatherApp{
+        position: absolute;
+        left: 4%;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .navbar-toggler{
+        position: absolute;
+        right: 3%;
+        span{
+            width: 1em;
+            height: 1em;
+        }
+    }
+    .navbar-nav{
+        background-color: rgba(255, 255, 255, 0.7);
+        @include flexCenter();
+        margin-top: 2.5%;
+     }
+ };
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .header_section{
+        #logo{
+            width: 15%;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            
+        }
+        .navbar-brand{
+            margin-right: 0;
+        }
+        .navbar-toggler{
+            position: absolute; 
+            right: 5%;
+        }
+       .weatherApp{
+           margin-left: 10%;
+           font-size: 9px;
+           #img-weather{
+               width: 40px;
+           }
+       }
+       .navbar-nav{
+           margin-right: -6%;
+       }
+        
+    }
+};
+
+@media (orientation: landscape) and (min-width: 800px){
+     
+    #navigation{
+        height: 15%;
+    }
+   #logo{
+       width: 10%;
+   }
+
+}
+// End Navbar
+//=======================================================================================================
+
+
+
+
+// Page Separator
+.page-separator{
+    @include flexCenter();
+    margin: 7% auto;
+    height: 1px;
+    background-color: #000000;
+    width: 80%;
+}
+//=======================================================================================================
+
+// Social Media
+.social-media {
+    position: fixed;
+    right: 0;
+    bottom: 3%;
+    z-index: 99;
+    .fab{
+        font-size: 2.5rem;
+        color: #ffffff;
+        padding: 0.3125rem;
+    }
+    .fa-facebook{
+        color: #4267b2;
+    }
+    .fa-instagram {
+        color: #833ab4;
+    }
+    li{
+        margin-bottom: 0.3125rem;
+    }
+}
+// End Social Media
+//=======================================================================================================
+// About Page
+.wrapper-about{
+    height: 140%;
+    padding-top: 5%;
+    opacity: 0;
+    transform: translateX(-1200px);
+    transition: 1s all ease-in-out;
+}
+.effect{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.container-about{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    background-color: #F7F6F6;
+    padding-top: 3%;
+    img{
+        width: 140px;
+        height: 200;
+    }
+    .image{
+        position: relative;
+        width: 50%;
+        text-align: center;
+        @include flexCenter();
+        flex-wrap: wrap;
+    }
+    .imageBx{
+        position: relative;
+        width: calc(50% -40px);
+        margin: 0 30px 30px 0;
+        padding: 0 25px;
+        height: 140px;
+        @include flexCenter();
+        flex-wrap: wrap;
+        border-radius: 4px;
+        transition: 0.5s;
+        box-shadow: 0 5px 15px rgba(0,0,0,.07); 
+    }
+    .imageBx.active{
+        box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    }
+    .imageBx img{
+        max-width: 100%;
+        filter: grayscale(1);
+        transition: 0.5s;
+        transform: scale(0.8);
+    }
+    .imageBx.active img{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+};
+.content{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    @include flexCenter();
+    .contentBx{
+        position: absolute;
+   
+    @include flexCenter();
+    transition: 0.5s;
+    transform: scale(0);
+    opacity: 0;
+    }
+    .contentBx.active{
+        transform: scale(1);
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+    .contentBx h2{
+        font-family: '$font-title';
+    }
+    .over {
+        height: 250px;
+        font-family: '$font-text';
+        overflow: scroll;
+    }
+};
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .wrapper-about{
+        padding-top: 50%
+    }
+    .container-about{
+        height: 100%;
+        .imageBx{
+            margin: 0;
+            height: 100px;
+        }
+    }
+    
+    .page-separator{
+        position: relative;
+        bottom: -100px;
+        .img-fluid{
+            width: 30px;
+            height: 46px;
+        }
+    }
+    .text{
+        margin-left: 8px;
+    }
+};
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper-about{
+        padding-top: 10%
+    }
+    
+    
+    .page-separator{
+        position: relative;
+        bottom: -100px;
+        .img-fluid{
+            width: 30px;
+            height: 46px;
+        }
+    }
+    .text{
+        margin-left: 8px;
+    }
+   
+};
+
+
+// End About Page
+//=======================================================================================================
+// Start Priceing Page
+
+.pricing-table-area {
+    padding: 70px 0;
+    .container-priceing{
+        background: #F7F6F6;
+        .section-title {
+            margin-bottom: 50px;
+            h2{
+                font-size: 48px;
+                font-weight: 700;
+                margin-top: 5%;
+                font-family: '$font-title';
+            }
+        }
+        .single-table {
+            padding: 40px;
+            background: #fff;
+            border-radius: 5px;
+            text-align: center;
+            h4{
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: capitalize;
+                font-family: '$font-title';
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 800;
+                margin: 30px 0;
+                font-family: '$font-text';
+                span{
+                    color: #777;
+                    font-size: 24px;
+                    font-weight: 400;
+                    font-family: '$font-text';
+                }
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li{
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    padding-bottom: 10px;
+                    font-family: '$font-text';
+                }
+            }
+            a{
+                font-size: 14px;
+                font-weight: 600;
+                border: 1px solid #d9d9d9;
+                border-radius: 3px;
+                padding: 15px 30px;
+                margin: 15px 0;
+                display: inline-block;
+                text-decoration: none;
+                color: #000;
+                font-family: '$font-title'
+            }
+
+        }
+        .popular{
+            position: relative;
+            .popular-price{
+                font-size: 14px;
+                position: absolute;
+                top: 25%;
+                left: -30px;
+                line-height: 1;
+                color: #000;
+                background: #d9d9d9;
+                margin-right: -5px;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding: 10px 20px;
+                transform: rotate(-90deg);
+                font-family: '$font-text';
+            }
+            .popular-price::before {
+                width: 0;
+                height: 0;
+                position: absolute;
+                content: "";
+                border-right: 0px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 20px solid transparent;
+                border-top: 18px solid transparent;
+                top: 0;
+                left: 0;
+            }
+            a{
+                background: #d9d9d9;
+                color: #000;
+            }
+        }
+        .col-md-4{
+            padding-bottom: 5%;
+        }
+    }
+}
+
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    .pricing-table-area{
+        padding: 140px 0 0 0;
+        .col-md-4{
+            width: 85%;
+            margin: auto;
+            padding-bottom: 5%;
+        }
+    }
+    .pricing-table-area .container-priceing .popular .popular-price{
+        left: -60px;
+    }
+};
+// End Priceing Page
+//=======================================================================================================
+// Start Gallery
+.gallery{
+    padding: 10% 0;
+    h4{
+        font-family: '$font-title';
+    }
+    p{
+        font-family: '$font-text';
+    }
+    .btn-md{
+        background-color: #d9d9d9;
+        border-color: #d9d9d9;
+    }
+    #rotator{
+        position: relative;
+        left: 10%;
+        font-size: 4em;
+        color: #000;
+        width: 80%;
+        margin-top: 7%;
+        font-family: '$font-title';
+        span{
+            color: #7F7F7F;
+            display: none;
+        }
+    };
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .gallery{
+        padding: 140px 0 0 0;
+        #rotator{
+            font-size: 2em;
+        }
+    }
+};
+// End Gallery
+//=======================================================================================================
+
+// Start Movies Section
+
+    
+.row-main{
+        @include flexCenter();
+        .nav-link{
+            padding: 9px;
+            font-family: '$font-text';
+            color: #000;
+        }
+        .card-tabs-1 {
+            border: none;
+            padding-bottom: 5%;
+            margin-top: -1px;
+            .card-title{
+                padding: 10px 0;
+                text-align: center;
+            }
+            .card-text{
+                padding-top: 10%; 
+                font-family: '$font-text';
+            } 
+            .btn{
+                background-color: #d9d9d9;
+                border-color: #d9d9d9;
+            }
+        };
+        h3, h4{
+            font-family: '$font-title';
+            padding-bottom: 10px;
+        }
+}
+
+ 
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .moveis{
+        padding: 140px 0 0 0; 
+    }
+    .row-main{
+        padding-left: 0;
+    }
+    .col-image{
+        text-align: center;
+    }
+    .card-text{
+        text-align: center;
+    }
+    .col-md-4{
+        text-align: center;
+    }
+};
+@media screen and (min-width: 769px){
+    .moveis{
+        padding: 140px 0 0 0; 
+    }
+}
+  //End Movies Section
+
+//=======================================================================================================
+
+  // Start Contact Us
+
+.container-contact{
+    background-color: #F7F6F6;
+    .row-contact{
+        padding: 5% 3%;
+        input{
+            margin-bottom: 5%;
+        }
+        #btn-form{
+            margin-top: 2%;
+            background-color: #d9d9d9;
+            border-color: #d9d9d9;
+        };
+        textarea{
+            resize: none;
+        };
+    };
+    h2{
+        font-family: '$font-title';
+        padding-top: 3%;
+    };
+    .map{
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+        iframe{
+             position: absolute;
+             top:0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+        };
+    };
+
+};
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .contact-us{
+        margin: 140px auto 0 auto; 
+    }
+    .map{
+        margin-top: 10px;
+    }
+    
+};
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .contact-us{
+        margin: 140px auto 0 auto; 
+    }
+};
+
+//=======================================================================================================
+
+//Footer
+
+.footer{
+    .container-footer{
+        background-color: #F7F6F6; 
+        
+        h4{
+            font-size: 14px;
+            font-family: '$font-title';
+            text-align: center;
+            padding: 1% 0;
+        }
+        .row{
+           
+            .col-md-6{
+                padding-left: 10%;
+                margin-top: 3%;
+            }
+            p{
+                font-size: 14px;
+                text-align: left;
+                margin:0;
+                font-family: '$font-text';
+            }
+            img{
+                padding-left: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .footer{
+        margin: 140px 0 0 0; 
+        .container-footer{
+            
+            h4{
+                padding-bottom: 2%;
+            }
+            .row{
+                p{
+                    text-align: center;; 
+                }
+                img{
+                    padding-left: auto;
+                    width: 60%; 
+                }
+            }
+        }
+    }
+    
+};
+
+@media screen  and (max-width: 1024px){
+   .footer{
+       margin: 180px 0 0 0;
+   }
+};
+
+//=======================================================================================================
+// classes to be added on click to color all the website
+
+//navbar color on active for all 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: black;
+}
+
+.change-color{
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+      background-color: $text-color;
+    }
+    
+        background-color: $bg-main;
+        .header_section{
+            
+            #navigation{
+                background-color: $bg-main;
+            }
+        
+            // .navbar-light .navbar-nav .nav-link {
+            //     color: $text-color;
+            // }
+            .weatherApp{
+                color: $text-color;
+            }
+        }
+        .container-about{
+            background-color: $bg-second;
+            h2{
+                color:  $bg-main;
+            }
+            .over{
+                color: $text-color;
+            }
+        }
+        .container-priceing{
+            background-color: $bg-second;
+            h2{
+                color:  $bg-main;
+            }
+            .single-table{
+                background-color: $bg-main;
+                h4{
+                    color: $bg-second;
+                }
+                h2{
+                    color: $bg-second; 
+                    span{
+                        color: $footer;
+                    }
+                }
+                ul{
+                    color: $text-color;
+                }
+                a{
+                    background-color: $bg-second;
+                    border-color: $text-color;
+                    color: $text-color;
+                }
+               
+            }
+            .popular{
+                .popular-price{
+                    background-color: $lifestyle;
+                }
+                
+            }
+        }
+        .pricing-table-area .container-priceing .popular .popular-price::before{
+            border-left: 10px solid $bg-main;
+        }
+        .gallery{
+            h6{
+                color: $lifestyle;
+            }
+            h4{
+               color: $bg-second;
+            }
+            p{
+                color: $text-color;
+            }
+            .btn{
+                background-color: $bg-second;
+                border-color: $text-color;
+                color: $text-color;
+            }
+            #rotator{
+                color: $text-color;
+                span{
+                    color: $lifestyle;
+                }
+            }
+        }
+        
+        .moveis{
+            h3{
+                color: $bg-second;
+            }
+            h4{
+                color: $bg-main;
+            }
+            .nav-item{
+                a{
+                    color: $text-color;
+                }
+                
+            }
+            .card{
+                background-color: $bg-second;
+                
+            }
+            .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+                background-color:$bg-second;
+            }
+            .card-text{
+                color: $text-color;
+            }
+            .btn{
+                background-color: $bg-main;
+                border-color: $text-color;
+                color: $text-color;
+            }
+        }
+        .container-contact{
+            background-color: $bg-second;
+            h2{
+                color: $bg-main;
+            }
+            #btn-form{
+                background-color: $bg-main;
+                border-color: $text-color;
+                color: $text-color;
+            }
+        }
+        .container-footer{
+            background-color: $bg-second;
+            p{
+                color: $text-color;
+                i{
+                    color: $footer;
+                }
+            }
+            h4{
+                color: $footer;
+            }
+        }
+   #container-bg-all{
+       background-color: $bg-all;
+   }   
+   .page-separator{
+       background-color: #F2F3AE;
+   }  
+}
+
+
+
+
+
+
+
+
+

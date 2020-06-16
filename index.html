@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Corvin's Castel</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/castel.css">
+</head>
+<body>
+<div class="homepage-wrapper " id="home">
+
+<!--========================================= bg video =====================================================-->
+<div class=" w-100 banner embed-responsive ">
+  <video controls autoplay muted loop> 
+    <source src="./Video/video-2.mp4" type="video/mp4">
+          This browser dose not support html5 video
+  </video>
+  <h2 id="video-text" class="animated fadeOutLeft slower delay-5s">The Corvin's Castel</h2>
+</div>
+        
+        
+<!--========================================= Navbar =====================================================-->
+
+<header class="header_section container-fluid ">
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navigation">
+        <a class="navbar-brand" href="#home"><img id="logo" class="img-fluid" src="./img/logo-castel-black.png">
+        </a>
+        <span class="weatherApp animated lightSpeedIn delay-5s"></span>
+           <button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#navbarNav"   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon "></span>
+          </button>
+    <div class="collapse navbar-collapse" id="navbarNav"> 
+      <ul class="navbar-nav ml-auto" id="menu">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item" id="nav-link">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#moveis">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact</a>
+         </li>
+      </ul>               
+    </div> <!-- .collapse nav-bar -->
+    </nav> <!-- .navbar -->
+  </div> <!-- .container -->
+</header>
+
+<!--========================================= social-media-icons =====================================================-->
+
+<ul class="social-media animated wobble slower delay-5s" id="socialIcons">
+  <li>
+    <a href="https://www.facebook.com/castelhd/" target="_blank">
+      <i class="fab fa-facebook"></i>  </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/castelulcorvinilor/" target="_blank">
+      <i class="fab fa-instagram"></i> </a>
+  </li>
+</ul> 
+</div> <!-- homepage-wrapper -->
+
+ <div id="container-bg-all">   <!-- divul cu bg transparent si video dedesupt -->
+
+<!--========================================= page separator =====================================================-->
+<div class="page-separator">
+    <img class="img-fluid" id="about" src="./img/blazon1.png" alt="Logo">
+</div>
+
+<!--========================================= About =====================================================-->
+
+  <div class="container-fluid wrapper-about" >
+       <div class="container container-about" >
+          <div class="image">
+              <div class="imageBx active" data-id="content1">
+                  <img src="./img/about_1.jpg" alt="" >
+              </div>
+              <div class="imageBx" data-id="content2">
+                  <img src="./img/vlad1.jpg" alt="" >
+              </div>
+              <div class="imageBx" data-id="content3">
+                  <img src="./img/fantana.jpg" alt="" >
+              </div>
+              <div class="imageBx" data-id="content4">
+                  <img src="./img/about_4.jpg" alt="" >
+              </div>
+          </div>
+        <div class="content">
+             <div class="contentBx active" id="content1"> 
+                <div>
+                    <div class="text">
+                        <h2>Short History</h2>
+                           <div class="over">
+                             Corvin Castle was laid out in 1446, when construction began on the orders of Voivode of Transylvania John Hunyadi (Hungarian: Hunyadi János, Romanian: Iancu or Ioan de Hunedoara) who wanted to transform the former keep built by Charles I of Hungary. The castle was originally given to John Hunyadi's father, Voyk (Vajk), by Sigismund of Luxembourg, king of Hungary and Croatia, as severance in 1409. It was also in 1446 that John Hunyadi was elected as the regent-governor by the Diet.
+                           </div>
+                    </div>
+                </div>
+             </div>
+             <div class="contentBx" id="content2">
+                <div>
+                    <div class="text">
+                        <h2>Vlad the Impaler</h2>
+                            <div class="over">
+                               Tourists are told that it was the place where Vlad the Impaler(Dracula), Prince of Wallachia, was held prisoner by John Hunyadi, Hungary's military leader and regent during the King's minority. Later, Vlad III entered a political alliance with John Hunyadi, although the latter was responsible for the execution of his father, Vlad II Dracul. Because of these links, the Hunedoara Castle is sometimes mentioned as a source of inspiration for Castle Dracula in Bram Stoker's 1897 horror novel Dracula. In fact, Stoker neither knew about Vlad's alliance with Hunyadi, nor about Hunyadi's castle. Instead, Stoker's own handwritten research notes confirm that the novelist imagined Castle Dracula to be situated on an empty top in the Transylvanian Călimani Mountains near the former border with Moldavia.
+                            </div>
+                    </div>
+                </div>
+             </div>
+             <div class="contentBx" id="content3">
+                <div>
+                    <div class="text">
+                          <h2>The Fountain</h2>
+                              <div class="over">
+                                  In the castle yard, near the 15th-century chapel, there is a well 30 meters deep. According to the legend, this fountain was dug by 3 Turkish prisoners to whom liberty was promised if they reached water. After 15 years they completed the well, but their captors did not keep their promise. It is said that the inscription on a wall of the well means <em>"you have water, but not soul"</em>. Specialists, however, have translated the inscription as: <em>"he who wrote this inscription is Hasan, who lives as slave of the giaours, in the fortress near the church"</em>.
+                              </div>
+                    </div>
+                </div>
+             </div>
+             <div class="contentBx" id="content4">
+                <div>
+                    <div class="text">
+                          <h2>How was buit</h2>
+                              <div class="over">
+                                  Built in a Renaissance-Gothic style and constructed over the site of an older fortification on a rock above the smaller Zlaști River, the castle is a large and imposing structure with tall towers, bastions, an inner courtyard, diversely coloured roofs, and myriads of windows and balconies adorned with stone carvings. The castle also features a double wall for enhanced fortification and is flanked by both rectangular and circular towers, an architectural innovation for the period's Transylvanian architecture. Some of the towers (the Capistrano Tower, the Deserted Tower and the Drummers' Tower) were used as prisons. The Buzdugan Tower (a type of mace after which it was named) was solely built for defensive purposes and it had its exterior decorated with geometric motifs. The rectangular shaped towers have large openings to accommodate larger weapons.
+                              </div> <!-- .over -->
+                    </div> <!-- .text -->
+                </div> <!-- div gol -->
+             </div> <!-- .contentBx -->
+         </div> <!-- .content -->  
+      </div> <!-- .container-about -->
+  </div> <!-- .wrapper-about -->
+    
+<!--========================================= page separator =====================================================-->
+  <div class="page-separator">
+    <img class="img-fluid" id="pricing" src="./img/blazon1.png" alt="Logo">
+  </div>
+
+<!--========================================= Priceing =====================================================-->
+
+<div class="pricing-table-area" >
+    <div class="container container-priceing">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="section-title text-center">
+                <h2>Prices</h2>
+             </div>
+          </div><!-- .col-md-12 -->
+       </div> <!-- .row -->
+
+       <div class="row">
+          <div class="col-md-4">
+             <div class="single-table ">
+                <h4>Free</h4>
+                <h2>€0<span>/pers</span></h2>
+                <ul>
+                   <li>Disabled child and companion</li>
+                   <li>Disabled adult and companion</li>
+                   <li>Childrean under 7 years</li>
+                   <li>organizations  of free social services </li>
+                </ul>
+                <a class="disabled" href="#">Free</a>
+             </div> <!-- .col-md-4 -->
+          </div> <!-- .row -->
+          <div class="col-md-4">
+             <div class="single-table popular">
+                <div class="popular-price">RECOMMANDED</div>
+                <h4>Basic</h4>
+                <h2>€25<span>/pers</span></h2>
+                <ul>
+                   <li>Partial area access</li>
+                   <li>Mobile photos only</li>
+                   <li>English guide</li>
+                   <li>No video and Limited time 2 hours</li>
+                </ul>
+                <a href="#">Buy Now</a>
+             </div> <!-- .single-table -->
+          </div> <!-- .col-md-4 -->
+          <div class="col-md-4">
+             <div class="single-table">
+                <h4>Super</h4>
+                <h2>€40<span>/pers</span></h2>
+                <ul>
+                   <li>Full area access</li>
+                   <li>Professional Foto/Video</li>
+                   <li>English guide</li>
+                   <li>Yes video and No hour limitation</li>
+                </ul>
+                <a href="#">Buy Now</a>
+              </div> <!-- .single-table -->
+           </div> <!-- .col-md-4 -->
+        </div> <!-- .row -->
+     </div>  <!-- .container-priceing -->
+  </div> <!-- #priceing -->
+  
+<!--========================================= page separator =====================================================-->
+<div class="page-separator">
+    <img class="img-fluid" id="gallery" src="./img/blazon1.png" alt="Logo">
+</div>
+ 
+<!--========================================= Gallery =====================================================-->
+
+<section class="gallery">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 mb-4">
+              <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+                      <li data-target="#carousel-example-1z" data-slide-to="6"></li>
+                  </ol>
+                  <div class="carousel-inner z-depth-1-half" role="listbox">
+                      <div class="carousel-item active">
+                          <img class="d-block w-100" src="./img/sunset_lg.jpg"
+                              alt="First slide">
+                      </div>
+
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/home-wine-slide-1.jpg"
+                              alt="Second slide">
+                      </div>
+
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/mountain-view.jpg"
+                              alt="Third slide">
+                      </div>
+
+                       <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/winter2.jpg"
+                              alt="Third slide">
+                      </div>
+
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/castel_front.jpg"
+                              alt="Third slide">
+                      </div>
+
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/entry.jpg"
+                              alt="Third slide">
+                      </div>
+                     
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/sunset_fisheye.jpg"
+                              alt="Third slide">
+                      </div>
+                     
+                  </div> <!-- .carousel-inner -->
+                 
+                  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div> <!-- .carousel -->
+          </div> <!-- .col-md-6 -->
+         
+          <div class="col-md-6">
+
+              <!--Lifestyle-->
+              <p href="" class="lifestyle">
+                  <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Lifestyle </strong></h6>
+              </p>
+              <h4 class="mb-3"><strong>Interesting facts about the mysterious Corvin Castle</strong></h4>
+              <p>Corvin Castle is the perfect destination for anyone who wants to discover a legendary castle. This gothic masterpiece of Transylvania, also known as Hunedoara Castle or Hunyadi Castle, is the largest medieval building in Romania and one of the most beautiful castles in the world. It was included in the top “10 European dream destinations”.</p>
+
+             
+              <p>by <a><strong>www.tourinromania.com</strong></a>, 22/04/2019</p>
+              <a href="https://tourinromania.com/reasons-to-visit-romania/interesting-facts-about-the-mysterious-corvin-castle/" target="_blank" class="btn btn-primary btn-md">Read more</a>
+
+          </div> <!-- .col-md-6 -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+    <!-- Start Rotator -->
+       <h2 id="rotator">Visit:
+            <span style="display: initial">Corvin's Castel</span>
+            <span>National Park Retezat</span>
+            <span>Sarmisegetusa Regia</span>
+            <span>Cincis Lake</span>
+            <span>The Gold Museum of Brad</span>
+            <span>Lake Bucura</span>
+            <span>The fortress of Deva</span>
+            <span>Sarmizegetusa Ulpia Traiana</span>
+       </h2>
+       <!-- End Rotator -->
+  </section> 
+
+<!--========================================= page separator =====================================================-->
+<div class="page-separator">
+    <img class="img-fluid" id="moveis" src="./img/blazon1.png" alt="Logo">
+</div>
+ 
+<!--========================================= Movies =====================================================-->
+<section class="moveis">
+  <div class="container container-movies ">
+  <div class="row row-main">
+    <div class="col-md-8">
+      <h3>TV Shows / Movies</h3>
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab">2001</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-2" role="tab">2007</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-3" role="tab">2013</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-4" role="tab">2016</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-5" role="tab">2018</a></li>
+      </ul>
+    
+      <div class="card card-tabs-1">
+        <div class="card-block">
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="tab-1">
+              <h4 class="card-title">TV Show</h4>
+              <div class="row justify-content-center">
+                  <div class="col-md-4 col-image">
+                      <img class="img-thumbnail" src="./img/movie1.jpg" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <p class="card-text">In October 2001, Corvin Castle was featured in an episode of <em>Fox Family Channel's</em> <strong>Scariest Places on Earth</strong>, where a family was sent overnight alone with cameras.
+                      </p>
+                      <a href="https://www.youtube.com/watch?v=q0VXST2HYSk" target="_blank" class="btn btn-primary">View Episode</a>
+                  </div>
+              </div> <!-- .row -->
+            </div> <!-- .tab-pane -->
+
+            <div class="tab-pane" id="tab-2">
+              <h4 class="card-title">TV Show</h4>
+              <div class="row justify-content-center">
+                  <div class="col-md-4 col-image">
+                      <img class="img-thumbnail" src="./img/movie2.jpg" alt="">
+                  </div>
+                  <div class="col-md-4 col-image">
+                      <p class="card-text">In February 2007, Corvin Castle played host to the British paranormal television program <strong>Most Haunted Live</strong>! for a three-night live investigation into the spirits reported to be haunting the castle. Results were inconclusive.</p>
+                      <a href="https://www.youtube.com/watch?v=gVzlCfHWYe0" target="_blank" class="btn btn-primary">View Episode</a>
+                  </div>
+              </div> <!-- .row -->
+            </div> <!-- .tab-pane -->
+
+            <div class="tab-pane" id="tab-3">
+              <h4 class="card-title">TV Show</h4>
+              <div class="row justify-content-center">
+                  <div class="col-md-4 col-image">
+                      <img class="img-thumbnail" src="./img/movie3.jpg" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <p class="card-text">In 2013, the television show <strong>Ghost Adventures</strong> filmed an episode at the castle as part of their <em>Halloween</em> special.</p>
+                      <a href="https://www.youtube.com/watch?v=b4WqdS_647E" target="_blank" class="btn btn-primary">View Episode</a>
+                  </div>
+              </div> <!-- .row -->
+            </div> <!-- .tab-pane -->
+            
+            <div class="tab-pane" id="tab-4">
+                <h4 class="card-title">Movie</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-image">
+                        <img class="img-thumbnail" src="./img/movie4.jpg" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="card-text">In 2016, beginning of April, scenes for <strong>Dragonheart</strong>: <em>Battle for the Heartfire</em> were filmed at the castle for months.</p>
+                        <a href="https://www.youtube.com/watch?v=_zpFz4QKTAQ" target="_blank" class="btn btn-primary">View Trailer</a>
+                    </div>
+                </div> <!-- .row -->
+              </div> <!-- .tab-pane -->
+
+              <div class="tab-pane" id="tab-5">
+                  <h4 class="card-title">Movie</h4>
+                  <div class="row justify-content-center">
+                      <div class="col-md-4 col-image">
+                          <img class="img-thumbnail" src="./img/movie5.jpg" alt="">
+                      </div>
+                      <div class="col-md-4">
+                          <p class="card-text">In 2018, the castle was used as the <em>Cârța Monastery</em> in the horror movie <strong>The Nun</strong>.</p>
+                          <a href="https://www.youtube.com/watch?v=zwAM5UnGd2s" target="_blank" class="btn btn-primary">View Trailer</a>
+                      </div>
+                  </div> <!-- .row -->
+              </div>  <!-- tab-pane --> 
+              
+          </div> <!-- tab-content -->
+
+        </div> <!-- card-block -->
+      </div> <!-- card-tabs-->
+    </div> <!-- col-md-6-->
+  </div> <!-- row-->
+</div> <!-- container -->
+</section>
+ 
+<!--========================================= page separator =====================================================-->
+
+<div class="page-separator">
+  <img class="img-fluid" id="contact-us" src="./img/blazon1.png" alt="Logo">
+</div>
+
+<!--========================================= Contact =====================================================-->
+
+<div class="container container-contact contact-us" >
+    <h2 class="text-center">Contact Us</h2>
+      <div class="row row-contact">
+        <div class="col-md-6 col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="Full name">
+          <input type="email" class="form-control" id="email" placeholder="Email address">
+          <textarea class="form-control" id="message" placeholder="Your message" rows="3"></textarea>
+          <button type="submit" class="btn btn-primary" id="btn-form">Send</button>
+        </div>
+        <div class="col-md-6 col-sm-12"> 
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.054755104464!2d22.886000915290772!3d45.75004822234564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474e8a8efc2a74cb%3A0x2cec7ae8ba35e916!2sCastelul%20Corvinilor!5e0!3m2!1sro!2sro!4v1588409648273!5m2!1sro!2sro" width="480" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+          </div> <!-- .map -->
+        </div> <!-- .col-md-6 -->
+      </div> <!-- .row-contact -->
+  </div> <!-- container -->
+  
+<!--========================================= page separator =====================================================-->
+  
+<div class="page-separator">
+    <img class="img-fluid" src="./img/blazon1.png" alt="Logo">
+</div>
+    
+<!--========================================= Footer =====================================================-->
+  
+<div class="container-fluid footer">
+  <div class="conteiner container-footer">
+    <div class="row">
+      <div class="col-md-6">
+        <p><i class="fas fa-map-marker-alt"></i> Strada Castelului 1-3,</p>
+        <p> <i class="fas fa-map-marker-alt"></i> Hunedoara 331141, Romania</p>
+        <p><i class="fas fa-phone-alt"></i> Tel: +40 786048718</p>
+        <p><i class="fas fa-envelope"></i> Email: contact@castelulcorvinilor.ro</p>
+      </div>
+      <div class="col-md-6">
+        <img src="./img/logo-castel-black.png" alt="">
+      </div>
+    </div>
+    <h4>Copyright ©bogdanhener</h4>
+  </div>
+</div>
+
+
+</div>  <!-- divul pt bg alb cu video dedesupt -->
+
+<!--========================================= Scripts =====================================================-->
+
+<!--jQuery Js  -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+   <!-- jQuery Ajax -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- Popper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+
+<!-- Bootstrap Js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+<!-- Javascript -->
+<script src="./js/nav.js"></script>
+  <script src="./js/castel.js"></script>
+
+<!-- Fontawsome -->
+  <script src="https://kit.fontawesome.com/89eeb9a3fe.js" crossorigin="anonymous">
+  </script>
+</body>
+</html>

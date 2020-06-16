@@ -1,0 +1,22 @@
+/* Font Face */
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf)
+}
+@font-face{
+    font-family: 'Ubuntu';
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf)
+}
+@font-face{
+    font-family: 'Tangerine';
+    src: url(../fonts/Tangerine/Tangerine-Regular.ttf)
+}
+@font-face{
+    font-family: 'Philosopher';
+    src: url(../fonts/Philosopher/Philosopher-Regular.ttf)
+}
