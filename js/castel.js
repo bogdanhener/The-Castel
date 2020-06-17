@@ -49,7 +49,7 @@ window.onload = function(){
     $.get('https://api.openweathermap.org/data/2.5/weather?q=Hunedoara&units=metric&APPID=19badfd866d42c91f3be8356564fbb15', (response)=> {
       let deg = Math.floor(response.main.temp);
       let weather = `
-      <p><img id='img-weather' src="http://openweathermap.org/img/wn/${response.weather[0].icon}.png"> ${response.weather[0].description}
+      <p><img id='img-weather' src="https://openweathermap.org/img/wn/${response.weather[0].icon}.png"> ${response.weather[0].description}
       / ${deg} °C</p>
       `
      $('.weatherApp').html(weather);
